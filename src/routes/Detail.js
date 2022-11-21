@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams } from "react-router-dom"
 
 function Detail(props) {
-    const {mId} = useParams();      //라우트 url 파라미터값(id) 가져오기     //비구조화할당
+    const {mId} = useParams();      //useParams() 라우트 url 파라미터값(id) 가져오기     //비구조화할당
 
     const getMovie = async() => {
         const json = await( 
